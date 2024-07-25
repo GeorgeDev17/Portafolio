@@ -1,0 +1,410 @@
+/*CSS Reset / Normalize*/
+
+:root{
+    /* Variable de colores basado en el modelo de Figma */
+   --cor-de-fundo: #F5F5F5; /* Color de fondo*/ 
+   --cor-de-link: #000; /* Color de los enlaces*/
+}
+
+/* Personalización del proyecto Portafolio -- Reset */
+body {
+    box-sizing: border-box; /* Facilita el control de los tamaños del elemento*/
+    background-color: var(--cor-de-fundo) ; /* Color de fondo del cuerpo del documento */
+    font-family: 'Raleway'; /* Fuente utilizada*/
+    margin: 0; /* Eliminar margenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    line-height: 1; /* Elimina espacios extra entre lines de texto */
+}
+ol, ul,li {
+    list-style: none; /* Eliminar estilos de lista por defecto (puntos en listas no ordenadas y los números en listas ordenadas)*/
+}
+a{
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: var(--cor-de-link); /* Color de texto de los enlaces*/
+}
+
+/*Sección Menu*/
+.container{
+    flex-grow: 1;
+    margin: 2rem auto;
+    max-width: 62rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.menu{
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.menu__header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu__header__derecha{
+    align-items: center;
+    display: flex;
+}
+
+.menu__header__icono{
+    margin-right: 10px;
+}
+
+.menu__title {
+    color: #052344;
+    font-size: 1.5em;
+}
+
+.menu__nav{
+    align-items: center;
+    display: flex;
+}
+
+.menu__list{
+    display: flex;
+}
+
+.menu__list-item{
+    color: #333;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.menu__list-item a:hover {
+    color: #007BFF; /* Color del texto al pasar el ratón */
+}
+
+/*Sección perfil*/
+.perfil{
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.perfil__div{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.perfil__div-foto{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.nombre{
+    color: #052344;
+    font-size: 2em;
+}
+
+.info__perfil{
+    color: #333;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.enlaces__contacto{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.enlaces__contacto__item{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.enlaces__contacto__item a {
+    color: #007BFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.enlaces__contacto__item img {
+    margin-left: 5px;
+}
+
+/*Sección sobre mi*/
+.about{
+    padding: 20px;
+    background-color: #EAF2FD;
+    font-family: 'Raleway';
+    color: #464646;
+}
+
+/*Sección Skills*/
+.skills{
+    padding: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    filter: grayscale(30%);
+}
+
+.skills__title{
+    color: #464646;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(192, 190, 201);
+}
+
+.skills__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skills__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__img img{
+    width: 50px;
+    height: auto;
+}
+
+.skills__name{
+    margin-top: 10px;
+    font-family: 'Raleway';
+    font-size: 19px;
+    color: #464646;
+}
+
+/*Sección Hobbies*/
+.hobbies{
+    padding: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    filter: grayscale(30%);
+}
+
+.hobbies__title{
+    color: #464646;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(192, 190, 201);
+}
+
+.hobbies__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.hobbies__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies__img img{
+    width: 70px;
+    height: auto;
+}
+
+.hobbies__name{
+    margin-top: 10px;
+    font-family: 'Raleway';
+    font-size: 19px;
+    color: #464646;
+}
+
+/* Experiencia Académica*/
+.academica{
+    background-color: #EAF2FD;
+    padding: 20px;
+}
+
+.academica__title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #464646;
+}
+
+.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills__img{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.academica__courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.academica__courses__box {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+}
+
+.academica__courses__box:hover {
+    transform: translateY(-5px);
+}
+
+.academica__courses__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.academica__courses__item__img{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.academica__courses__item__img img {
+    max-width: 100px;
+    height: auto;
+    display: inline-block;
+}
+
+.academica__courses__item__title h4 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.academica__courses__item__subtitle p {
+    text-align: center;
+    color: #555;
+}
+
+/* Experiencia*/
+.experiencia__section__title{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #464646;
+}
+
+.experiencia__img{
+    width:752px; 
+    height:auto;
+}
+
+/*Contacto*/
+
+
+
+/* Footer*/
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;/*#464646*/
+    text-align: center;
+}
+
+.footer__rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__rodape p {
+    margin: 0;
+}
+
+.enlaces__footer {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.enlaces__contacto__item {
+    margin-left: 15px;
+}
+
+.enlaces__contacto__item a {
+    display: inline-block;
+}
+
+.tamaño {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Esto hará que los iconos sean blancos */
+}
+
+/* Responsive Design */
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+.footer__rodape {
+    flex-direction: column;
+    text-align: center;
+}
+
+.enlaces__contacto__item {
+    margin-left: 0;
+    margin-top: 10px;
+}
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
